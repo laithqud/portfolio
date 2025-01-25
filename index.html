@@ -14,19 +14,31 @@
             <h4 class="header-div1-h4">Full Stack Developer</h4>
         </div>
         <div class="header-divs header-div2">
-            <a href="">
+            <a href="#about-me">
                 <i class="fa-solid fa-arrow-down" style="color: #dddddd;"></i>
             </a>
         </div>
     </header>
     <section id="navigation">
         <div class="navigation-logo navigation-items">
-            <a href="" class="undrline"><h3 class="h3FontSize txtWhite">Laith AlQudah</h3></a>
+            <a href="#header" class="undrline"><h3 class="h3FontSize txtWhite">Laith AlQudah</h3></a>
         </div>
         <div class="navigation-button navigation-items">
-            <a href="" class="undrline">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
+        
+            <label for="menu-toggle">
                 <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-            </a>
+            </label>
+            
+            <div class="dropdown-menu">
+                <ul>
+                    <li class="margin-li"><a href="#header" class="undrline">Home</a></li>
+                    <li class="margin-li"><a href="#about-me" class="undrline">About me</a></li>
+                    <li class="margin-li"><a href="#skills" class="undrline">Skills</a></li>
+                    <li class="margin-li"><a href="#projects" class="undrline">Projects</a></li>
+                    <li class="margin-li"><a href="#contact-me" class="undrline">Contact Me</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -215,6 +227,10 @@
         </div>
     </section>
 
-    <footer></footer>
+    <footer>
+        <div class="div-footer">
+            &copy; 2025 Copyright: Laith AlQudah 
+        </div>
+    </footer>
 </body>
 </html>

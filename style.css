@@ -26,6 +26,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    scroll-behavior: smooth;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -59,6 +60,13 @@ table {
 body{
     font-family: sans-serif;
 
+}
+footer{
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #header{
@@ -106,8 +114,27 @@ body{
 .navigation-button{
     width: 50%;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
-    justify-content: flex-end;
+    padding: 5px;
+    gap: 6px;
+}
+.dropdown-menu{
+    min-width: 240px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 210px;
+    background-color: darkgray;
+}
+.dropdown-menu {
+    display: none;
+}
+
+.menu-toggle:checked + label + .dropdown-menu {
+    display: block;
+}
+.margin-li{
+    margin: 5px 0 10px 5px;
 }
 .undrline{
     text-decoration: none;
@@ -170,7 +197,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgb(169 169 169);
+    background-color: darkgray;
     border-radius: 12px;
 }
 .circle {
@@ -296,12 +323,15 @@ a:visited{
 .fontSize25px{
     font-size: 25px;
 }
+.div-footer{
+    color: white;
+    align-items: center;
+}
 
 
 
 
-
-/* Responsive header */
+/* Responsive  */
 @media (max-width:1025px) {
     .ImgCorners{
         width: 300px;
